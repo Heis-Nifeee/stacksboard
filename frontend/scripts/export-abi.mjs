@@ -93,7 +93,9 @@ process.stdout.write = (...args) => process.stderr.write(...args);
 
 let simnet;
 try {
-  simnet = await initSimnet(manifestPath);
+  // The Clarinet SDK resolves an absolute Windows manifest path as if it were
+  // relative. Supplying the local manifest keeps ABI generation portable.
+  simnet = await initSimnet("Clarinet.toml");
 } catch (err) {
   process.stdout.write = realWrite;
   process.stderr.write(

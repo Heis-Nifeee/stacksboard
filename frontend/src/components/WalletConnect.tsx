@@ -96,7 +96,7 @@ export function WalletConnect() {
       <button
         onClick={handleConnect}
         disabled={connecting}
-        className='bg-[#434242] w-[135px] h-[40px] rounded-[40px] border-[1px] border-[#1F1E1F] text-[12px] text-[#F4F3EF] font-mono leading-[100%]'
+        className='rounded-full bg-orange-300 px-4 py-2.5 font-mono text-xs font-medium text-stone-950 transition hover:bg-orange-200 disabled:opacity-60'
       >
         {connecting ? 'Connecting...' : 'Connect Wallet'}
       </button>
@@ -107,7 +107,7 @@ export function WalletConnect() {
   const short = `${address.slice(0, 6)}…${address.slice(-4)}`;
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-      <div className='bg-[#434242] w-[135px] h-[40px] rounded-[40px] border-[1px] border-[#1F1E1F] text-[12px] text-[#F4F3EF] font-mono leading-[100%] flex items-center justify-center'>
+      <div className='rounded-full border border-white/15 bg-white/5 px-4 py-2.5 font-mono text-xs text-stone-200'>
         {short}
       </div>
       <button 

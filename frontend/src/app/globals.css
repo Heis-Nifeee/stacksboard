@@ -4,11 +4,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #131416 !important;
-  --foreground: #f9fafb;
+  --background: #12110f !important;
+  --foreground: #f7f5f0;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
 }
+
+* { box-sizing: border-box; }
+::selection { background: #fdba74; color: #1c1917; }

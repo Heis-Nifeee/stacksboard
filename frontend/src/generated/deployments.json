@@ -1,0 +1,11 @@
+{
+  "network": "testnet",
+  "deployed_at": "2026-10-22T22:09:28.602Z",
+  "contracts": {
+    "guestbook": {
+      "contract_id": "ST3QNG4ST4ETTDEXPM19F9THRGKG1P2EN4DZCS6HM.guestbook",
+      "tx_id": "0x23ccc6d26869971777c3b479ee94be519d2219ddaf8a733d99f18565bc2eceb9",
+      "block_height": 807235
+    }
+  }
+}
